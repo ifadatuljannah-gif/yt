@@ -1,1 +1,1 @@
-TVRI|https://ott-balancer.tvri.go.id/live/eds/TVRI-Nasional/hls/1080p/index.m3u8
+RTV|/https://op-group1-swiftservehd-1.dens.tv/h/h10/01.m3u8
