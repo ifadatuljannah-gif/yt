@@ -1,1 +1,3 @@
-Classic Mr Bean|https://www.youtube.com/watch?v=XQLEvieRMj4
+TVRI|https://ott-balancer.tvri.go.id/live/eds/TVRI-Nasional/hls/1080p/index.m3u8
+METROTV|https://hls.metrotvnews.com/live/eds/Metro-TV/hls/1080p/index.m3u8
+KOMPAS|https://video02.kompas.tv/live/kompastv/playlist.m3u8
