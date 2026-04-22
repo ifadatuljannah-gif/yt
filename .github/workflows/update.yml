@@ -1,0 +1,22 @@
+name: Update M3U8
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '0 */5 * * *'
+permissions:
+  contents: write
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: pip install yt-dlp
+      - run: |
+          mkdir public
+          cat channels.txt | while IFS='|' read name url; do
+            yt-dlp -g "$url" > "public/$name.m3u8" || true
+          done
+      - uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./public
